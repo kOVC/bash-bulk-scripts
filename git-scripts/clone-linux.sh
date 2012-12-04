@@ -5,6 +5,10 @@
 #the lines pertaining to repos you don't need, both in the directory creating 
 #half of the script (the first part) and in the git clone section.
 #
+# IF THE FILES TRANSFER IS SLOWER THAN USUAL, TRY USING ANOTHER PROTOCOL BY USING 
+# THE EQUIVALENT SCRIPT IN THE http DIRECTORY (clone-linux-http.sh) OR 
+# (clone-linux-https.sh)
+#
 # THIS IS A VERY TRIVIAL SCRIPT. It's not the best approach. I'll work on it later, but
 # for now, that's all there is.
 #

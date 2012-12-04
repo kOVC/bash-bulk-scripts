@@ -1,7 +1,11 @@
 #!/bin/sh
 #This script will create a directory structure for the gnu git repositories in a folder
 #called "git/gnu.org/" in your home directory. These repositories are then cloned from
-#the gnu savannah service. 
+#the gnu savannah service.
+#
+# IF THE FILES TRANSFER IS SLOWER THAN USUAL, TRY USING ANOTHER PROTOCOL BY USING 
+# THE EQUIVALENT SCRIPT IN THE http DIRECTORY (clone-gnu-http.sh) OR THE ssh 
+# DIRECTORY (clone-gnu-ssh.sh)
 #
 # THIS IS A VERY TRIVIAL SCRIPT. It's not the best approach. I'll work on it later, but
 # for now, that's all there is.

@@ -1,6 +1,10 @@
 #!/bin/sh
 #clonning the mono project repositories from github.com
 #
+# IF THE FILES TRANSFER IS SLOWER THAN USUAL, TRY USING ANOTHER PROTOCOL BY USING 
+# THE EQUIVALENT SCRIPT IN THE http DIRECTORY (clone-mono-https.sh) OR THE ssh 
+# DIRECTORY (clone-mono-ssh.sh)
+#
 # THIS IS A VERY TRIVIAL SCRIPT. It's not the best approach. I'll work on it later, but
 # for now, that's all there is.
 #
