@@ -4,7 +4,38 @@
 #This is a huge download, if you don't need all those repositories, delete
 #the lines pertaining to repos you don't need, both in the directory creating 
 #half of the script (the first part) and in the git clone section.
-#____________________________________________________________________________
+#
+# THIS IS A VERY TRIVIAL SCRIPT. It's not the best approach. I'll work on it later, but
+# for now, that's all there is.
+#
+###############################################################################
+# clone-linux.sh
+#            A bash script to clone all git repositories from kernel.org
+# Author:
+#      VC (aka kOVC) <vc at korganization dot com>
+#
+# Copyright (c) 2012 kOVC
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You can find a full copy of the GPL license in many formats in the root 
+# directory of the distribution containing this file under the name
+# COPYING, COPYING.dbk, COPYING.html, COPYING.odt, COPYING.dbk.tex, 
+# and COPYING.texi
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>
+###############################################################################
+#
+
 #Initializing directories
 #Defining variables
 export H_DIR=~

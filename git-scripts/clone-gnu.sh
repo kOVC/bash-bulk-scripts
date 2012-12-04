@@ -1,10 +1,49 @@
 #!/bin/sh
+#This script will create a directory structure for the gnu git repositories in a folder
+#called "git/gnu.org/" in your home directory. These repositories are then cloned from
+#the gnu savannah service. 
+#
+# THIS IS A VERY TRIVIAL SCRIPT. It's not the best approach. I'll work on it later, but
+# for now, that's all there is.
+#
+###############################################################################
+# clone-gnu.sh
+#            A bash script to clone all git repository from GNU Savannah
+# Author:
+#      VC (aka kOVC) <vc at korganization dot com>
+#
+# Copyright (c) 2012 kOVC
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You can find a full copy of the GPL license in many formats in the root 
+# directory of the distribution containing this file under the name
+# COPYING, COPYING.dbk, COPYING.html, COPYING.odt, COPYING.dbk.tex, 
+# and COPYING.texi
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>
+###############################################################################
+#
+
+mkdir ~/git/gnu.org/
+cd ~/git/gnu.org/
 git clone git://git.sv.gnu.org/a2ps.git
 git clone git://git.sv.gnu.org/acl.git
 git clone git://git.sv.gnu.org/adgmix.git
 git clone git://git.sv.gnu.org/administration.git
+cd administration
 git clone git://git.sv.gnu.org/administration/sav.git
 git clone git://git.sv.gnu.org/administration/savane.git
+cd ..
 git clone git://git.sv.gnu.org/aetherspace.git
 git clone git://git.sv.gnu.org/agplmail.git
 git clone git://git.sv.gnu.org/akfavatar.git
@@ -95,9 +134,12 @@ git clone git://git.sv.gnu.org/diary.git
 git clone git://git.sv.gnu.org/dico.git
 git clone git://git.sv.gnu.org/diffutils.git
 git clone git://git.sv.gnu.org/dino.git
+cd dino
 git clone git://git.sv.gnu.org/dino/glashctl.git
+cd ..
 git clone git://git.sv.gnu.org/dnt.git
 git clone git://git.sv.gnu.org/dotgnu-pnet.git
+cd dotgnu-pnet
 git clone git://git.sv.gnu.org/dotgnu-pnet/cscctest.git
 git clone git://git.sv.gnu.org/dotgnu-pnet/libCrayons.git
 git clone git://git.sv.gnu.org/dotgnu-pnet/libjit.git
@@ -106,6 +148,7 @@ git clone git://git.sv.gnu.org/dotgnu-pnet/pnet.git
 git clone git://git.sv.gnu.org/dotgnu-pnet/pnetC.git
 git clone git://git.sv.gnu.org/dotgnu-pnet/pnetlib.git
 git clone git://git.sv.gnu.org/dotgnu-pnet/treecc.git
+cd ..
 git clone git://git.sv.gnu.org/dragora.git
 git clone git://git.sv.gnu.org/dtrt-indent.git
 git clone git://git.sv.gnu.org/dum.git
@@ -124,7 +167,9 @@ git clone git://git.sv.gnu.org/emacs-epackage.git
 git clone git://git.sv.gnu.org/emacs-i18n.git
 git clone git://git.sv.gnu.org/emacs-tiny-tools.git
 git clone git://git.sv.gnu.org/emacs.git
+cd emacs
 git clone git://git.sv.gnu.org/emacs/elpa.git
+cd ..
 git clone git://git.sv.gnu.org/emms.git
 git clone git://git.sv.gnu.org/emtest.git
 git clone git://git.sv.gnu.org/enscript.git
@@ -147,18 +192,22 @@ git clone git://git.sv.gnu.org/fluxus.git
 git clone git://git.sv.gnu.org/fpm.git
 git clone git://git.sv.gnu.org/freecontrol.git
 git clone git://git.sv.gnu.org/freedink.git
+cd freedink
 git clone git://git.sv.gnu.org/freedink/dfarc.git
 git clone git://git.sv.gnu.org/freedink/dink-data.git
 git clone git://git.sv.gnu.org/freedink/freedink-data.git
 git clone git://git.sv.gnu.org/freedink/minife.git
 git clone git://git.sv.gnu.org/freedink/windinkedit.git
+cd ..
 git clone git://git.sv.gnu.org/freedoom.git
 git clone git://git.sv.gnu.org/freemediatools.git
 git clone git://git.sv.gnu.org/freeon.git
 git clone git://git.sv.gnu.org/freetalkpy.git
 git clone git://git.sv.gnu.org/freetype.git
+cd freetype
 git clone git://git.sv.gnu.org/freetype/freetype2-demos.git
 git clone git://git.sv.gnu.org/freetype/freetype2.git
+cd ..
 git clone git://git.sv.gnu.org/friata.git
 git clone git://git.sv.gnu.org/fritzcontact.git
 git clone git://git.sv.gnu.org/frunge.git
@@ -168,7 +217,9 @@ git clone git://git.sv.gnu.org/ftpsync.git
 git clone git://git.sv.gnu.org/funcmp.git
 git clone git://git.sv.gnu.org/g-wrap.git
 git clone git://git.sv.gnu.org/gama.git
+cd gama
 git clone git://git.sv.gnu.org/gama/examples.git
+cd ..
 git clone git://git.sv.gnu.org/garble.git
 git clone git://git.sv.gnu.org/gawk.git
 git clone git://git.sv.gnu.org/gcal.git
@@ -192,6 +243,7 @@ git clone git://git.sv.gnu.org/gmailreader.git
 git clone git://git.sv.gnu.org/gnash.git
 git clone git://git.sv.gnu.org/gnetic.git
 git clone git://git.sv.gnu.org/gnokii.git
+cd gnokii
 git clone git://git.sv.gnu.org/gnokii/gnapplet.git
 git clone git://git.sv.gnu.org/gnokii/gnocky.git
 git clone git://git.sv.gnu.org/gnokii/gnokii-artwork.git
@@ -199,6 +251,7 @@ git clone git://git.sv.gnu.org/gnokii/gnokii-extras.git
 git clone git://git.sv.gnu.org/gnokii/gnokiifs.git
 git clone git://git.sv.gnu.org/gnokii/knokiisync.git
 git clone git://git.sv.gnu.org/gnokii/zphone.git
+cd ..
 git clone git://git.sv.gnu.org/gnowsys.git
 git clone git://git.sv.gnu.org/gnuae.git
 git clone git://git.sv.gnu.org/gnubatch.git
@@ -257,6 +310,7 @@ git clone git://git.sv.gnu.org/hovel.git
 git clone git://git.sv.gnu.org/hplus.git
 git clone git://git.sv.gnu.org/hunt.git
 git clone git://git.sv.gnu.org/hurd.git
+cd hurd
 git clone git://git.sv.gnu.org/hurd/glibc.git
 git clone git://git.sv.gnu.org/hurd/gnumach.git
 git clone git://git.sv.gnu.org/hurd/hurd.git
@@ -267,6 +321,7 @@ git clone git://git.sv.gnu.org/hurd/procfs.git
 git clone git://git.sv.gnu.org/hurd/unionfs.git
 git clone git://git.sv.gnu.org/hurd/viengoos.git
 git clone git://git.sv.gnu.org/hurd/web.git
+cd ..
 git clone git://git.sv.gnu.org/hutos.git
 git clone git://git.sv.gnu.org/hybrid.git
 git clone git://git.sv.gnu.org/hydra-recipes.git
@@ -305,14 +360,18 @@ git clone git://git.sv.gnu.org/leg.git
 git clone git://git.sv.gnu.org/lemming.git
 git clone git://git.sv.gnu.org/leo-lookup.git
 git clone git://git.sv.gnu.org/libcdio.git
+cd libcdio
 git clone git://git.sv.gnu.org/libcdio/Perl-Device-Cdio.git
 git clone git://git.sv.gnu.org/libcdio/pycdio.git
 git clone git://git.sv.gnu.org/libcdio/rbcdio.git
+cd ..
 git clone git://git.sv.gnu.org/libchop.git
 git clone git://git.sv.gnu.org/libcvd.git
 git clone git://git.sv.gnu.org/libiconv.git
 git clone git://git.sv.gnu.org/libidn.git
+cd libidn
 git clone git://git.sv.gnu.org/libidn/libidn2.git
+cd ..
 git clone git://git.sv.gnu.org/libirobot-create.git
 git clone git://git.sv.gnu.org/libntlm.git
 git clone git://git.sv.gnu.org/libredwg.git
@@ -332,11 +391,15 @@ git clone git://git.sv.gnu.org/liquidwar6.git
 git clone git://git.sv.gnu.org/lispac.git
 git clone git://git.sv.gnu.org/listhelper.git
 git clone git://git.sv.gnu.org/ll-plugins.git
+cd ll-plugins
 git clone git://git.sv.gnu.org/ll-plugins/azr3-jack.git
 git clone git://git.sv.gnu.org/ll-plugins/lv2-c++-tools.git
+cd ..
 git clone git://git.sv.gnu.org/lookat.git
 git clone git://git.sv.gnu.org/lwip.git
+cd lwip
 git clone git://git.sv.gnu.org/lwip/lwip-contrib.git
+cd ..
 git clone git://git.sv.gnu.org/lyxblogger.git
 git clone git://git.sv.gnu.org/m4.git
 git clone git://git.sv.gnu.org/machafuko.git
@@ -346,7 +409,9 @@ git clone git://git.sv.gnu.org/mailnotify.git
 git clone git://git.sv.gnu.org/mailutils.git
 git clone git://git.sv.gnu.org/make.git
 git clone git://git.sv.gnu.org/maposmatic.git
+cd maposmatic
 git clone git://git.sv.gnu.org/maposmatic/ocitysmap.git
+cd ..
 git clone git://git.sv.gnu.org/marray.git
 git clone git://git.sv.gnu.org/maverik.git
 git clone git://git.sv.gnu.org/mcron.git
@@ -453,8 +518,10 @@ git clone git://git.sv.gnu.org/readline.git
 git clone git://git.sv.gnu.org/recaged.git
 git clone git://git.sv.gnu.org/recutils.git
 git clone git://git.sv.gnu.org/reindeer.git
+cd reindeer
 git clone git://git.sv.gnu.org/reindeer/gtkreindeer.git
 git clone git://git.sv.gnu.org/reindeer/reindeer-opengl.git
+cd ..
 git clone git://git.sv.gnu.org/riece.git
 git clone git://git.sv.gnu.org/rippix.git
 git clone git://git.sv.gnu.org/rizoma.git
@@ -496,17 +563,21 @@ git clone git://git.sv.gnu.org/skribilo.git
 git clone git://git.sv.gnu.org/slag.git
 git clone git://git.sv.gnu.org/smalltalk.git
 git clone git://git.sv.gnu.org/smc.git
+cd smc
 git clone git://git.sv.gnu.org/smc/encoding-converters.git
 git clone git://git.sv.gnu.org/smc/fonts.git
 git clone git://git.sv.gnu.org/smc/hyphenation.git
 git clone git://git.sv.gnu.org/smc/input-methods.git
+cd ..
 git clone git://git.sv.gnu.org/snailbbs.git
 git clone git://git.sv.gnu.org/snippets.git
 git clone git://git.sv.gnu.org/snogray.git
 git clone git://git.sv.gnu.org/social.git
 git clone git://git.sv.gnu.org/solang.git
 git clone git://git.sv.gnu.org/sqltutor.git
+cd sqltutor
 git clone git://git.sv.gnu.org/sqltutor/datasets.git
+cd ..
 git clone git://git.sv.gnu.org/src-highlite.git
 git clone git://git.sv.gnu.org/sshproxy.git
 git clone git://git.sv.gnu.org/stalkerfs.git
@@ -537,11 +608,15 @@ git clone git://git.sv.gnu.org/topot.git
 git clone git://git.sv.gnu.org/tpop3d.git
 git clone git://git.sv.gnu.org/tramp.git
 git clone git://git.sv.gnu.org/traverso.git
+cd traverso
 git clone git://git.sv.gnu.org/traverso/doc.git
+cd ..
 git clone git://git.sv.gnu.org/traydevice.git
 git clone git://git.sv.gnu.org/tsp.git
+cd tsp
 git clone git://git.sv.gnu.org/tsp/dadi.git
 git clone git://git.sv.gnu.org/tsp/dlock.git
+cd ..
 git clone git://git.sv.gnu.org/ttb.git
 git clone git://git.sv.gnu.org/tutka.git
 git clone git://git.sv.gnu.org/txr.git
@@ -563,10 +638,14 @@ git clone git://git.sv.gnu.org/w3.git
 git clone git://git.sv.gnu.org/weaver.git
 git clone git://git.sv.gnu.org/websec.git
 git clone git://git.sv.gnu.org/weechat.git
+cd weechat
 git clone git://git.sv.gnu.org/weechat/scripts.git
+cd ..
 git clone git://git.sv.gnu.org/wget.git
 git clone git://git.sv.gnu.org/womb.git
+cd womb
 git clone git://git.sv.gnu.org/womb/hacks.git
+cd ..
 git clone git://git.sv.gnu.org/woodchuck.git
 git clone git://git.sv.gnu.org/wordgen.git
 git clone git://git.sv.gnu.org/ww-tedit.git
