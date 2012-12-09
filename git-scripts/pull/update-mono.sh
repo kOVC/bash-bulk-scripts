@@ -17,7 +17,7 @@ cd ~/git/mono/cecil
 git pull
 cd ~/git/mono/cecil-old
 git pull
-cd ~/git/mono/cocoa-sharpgit pull
+cd ~/git/mono/cocoa-sharpgit
 git pull
 cd ~/git/mono/crimson
 git pull
@@ -258,8 +258,6 @@ git pull
 cd ~/git/mono/uia2atk
 git pull
 cd ~/git/mono/upcoming-sharp
-git pull
-cd ~/git/mono/update.sh
 git pull
 cd ~/git/mono/webkit-sharp
 git pull
